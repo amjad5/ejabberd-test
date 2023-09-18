@@ -1,0 +1,497 @@
+==========
+STARTED Tigase Thu Jun 15 15:37:44 UTC 2023 using:
+    ./scripts/tigase.sh start etc/tigase.conf 
+==========
+componentInfo{Title=Tigase XML Tools, Version=4.2.0-b312/d9c67f01, Class=tigase.xml.XMLUtils}
+componentInfo{Title=Tigase Utils, Version=4.3.0-b469/4d54586e, Class=tigase.util.ClassUtil}
+componentInfo{Title=Tigase XMPP Server, Version=8.3.0-b6255/da4091cf, Class=tigase.server.XMPPServer}
+componentInfo{Title=Tigase XMPP Server Distribution, Version=8.3.0-b12193/133d8cff, Class=tigase.dist.XmppServerDist}
+[1;92m[2023-06-15 15:37:45:298][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mNo property file not specified! Using default one etc/init.properties
+[1;92m[2023-06-15 15:37:45:360][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mProvided property file /home/tigase/tigase-server-8.3.0-b12193/etc/init.properties does NOT EXISTS! Trying to use default one etc/init.properties
+[1;92m[2023-06-15 15:37:45:370][0;36m [CONFIG  ][0m [                  main ][1;34m ConfigHolder.loadFromDSLFiles()  : [0mLoading configuration from file: etc/config.tdsl
+[1;92m[2023-06-15 15:37:49:581][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+                  [org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)]
+                  -> java.net.ConnectException: Connection refused
+                     [java.base/sun.nio.ch.Net.pollConnect(Native Method)]
+=====================
+
+
+
+[1;92m[2023-06-15 15:37:49:874][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+                  [org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)]
+                  -> java.net.ConnectException: Connection refused
+                     [java.base/sun.nio.ch.Net.pollConnect(Native Method)]
+=====================
+
+
+
+
+
+
+
+  =============================================================================
+  ERROR! Terminating the server process.
+  Problem initializing the server: 
+RootCause:
+   -> tigase.kernel.KernelException: Failed to initialize data sources!
+      [tigase.server.Bootstrap.start(Bootstrap.java:324)]
+  Please fix the problem and start the server again.
+  =============================================================================
+
+
+
+
+
+ShutdownThread started... 2023-06-15T15:37:49.961328465
+
+Total number of threads: 26
+No locked threads.
+
+Save thread-dump to file: logs/thread-dump.log, size: 13481
+ShutdownThread finished...
+STOPPED Thu Jun 15 15:38:54 UTC 2023
+==========
+STARTED Tigase Thu Jun 15 15:38:58 UTC 2023 using:
+    ./scripts/tigase.sh start etc/tigase.conf 
+==========
+componentInfo{Title=Tigase XML Tools, Version=4.2.0-b312/d9c67f01, Class=tigase.xml.XMLUtils}
+componentInfo{Title=Tigase Utils, Version=4.3.0-b469/4d54586e, Class=tigase.util.ClassUtil}
+componentInfo{Title=Tigase XMPP Server, Version=8.3.0-b6255/da4091cf, Class=tigase.server.XMPPServer}
+componentInfo{Title=Tigase XMPP Server Distribution, Version=8.3.0-b12193/133d8cff, Class=tigase.dist.XmppServerDist}
+[1;92m[2023-06-15 15:38:58:809][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mNo property file not specified! Using default one etc/init.properties
+[1;92m[2023-06-15 15:38:58:865][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mProvided property file /home/tigase/tigase-server-8.3.0-b12193/etc/init.properties does NOT EXISTS! Trying to use default one etc/init.properties
+[1;92m[2023-06-15 15:38:58:877][0;36m [CONFIG  ][0m [                  main ][1;34m ConfigHolder.loadFromDSLFiles()  : [0mLoading configuration from file: etc/config.tdsl
+[1;92m[2023-06-15 15:39:03:511][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+[1;92m[2023-06-15 15:39:03:868][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+
+
+
+
+  =============================================================================
+  ERROR! Terminating the server process.
+  Problem initializing the server: 
+RootCause:
+   -> tigase.kernel.KernelException: Failed to initialize data sources!
+      [tigase.server.Bootstrap.start(Bootstrap.java:324)]
+  Please fix the problem and start the server again.
+  =============================================================================
+
+
+
+
+
+ShutdownThread started... 2023-06-15T15:39:03.946548981
+
+Total number of threads: 35
+No locked threads.
+
+Save thread-dump to file: logs/thread-dump.log, size: 18470
+ShutdownThread finished...
+STOPPED Thu Jun 15 15:40:34 UTC 2023
+==========
+STARTED Tigase Thu Jun 15 15:40:58 UTC 2023 using:
+    ./scripts/tigase.sh start etc/tigase.conf 
+==========
+componentInfo{Title=Tigase XML Tools, Version=4.2.0-b312/d9c67f01, Class=tigase.xml.XMLUtils}
+componentInfo{Title=Tigase Utils, Version=4.3.0-b469/4d54586e, Class=tigase.util.ClassUtil}
+componentInfo{Title=Tigase XMPP Server, Version=8.3.0-b6255/da4091cf, Class=tigase.server.XMPPServer}
+componentInfo{Title=Tigase XMPP Server Distribution, Version=8.3.0-b12193/133d8cff, Class=tigase.dist.XmppServerDist}
+[1;92m[2023-06-15 15:40:59:555][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mNo property file not specified! Using default one etc/init.properties
+[1;92m[2023-06-15 15:40:59:609][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mProvided property file /home/tigase/tigase-server-8.3.0-b12193/etc/init.properties does NOT EXISTS! Trying to use default one etc/init.properties
+[1;92m[2023-06-15 15:40:59:617][0;36m [CONFIG  ][0m [                  main ][1;34m ConfigHolder.loadFromDSLFiles()  : [0mLoading configuration from file: etc/config.tdsl
+[1;92m[2023-06-15 15:41:04:016][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+[1;92m[2023-06-15 15:41:04:452][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+
+
+
+
+  =============================================================================
+  ERROR! Terminating the server process.
+  Problem initializing the server: 
+RootCause:
+   -> tigase.kernel.KernelException: Failed to initialize data sources!
+      [tigase.server.Bootstrap.start(Bootstrap.java:324)]
+  Please fix the problem and start the server again.
+  =============================================================================
+
+
+
+
+
+ShutdownThread started... 2023-06-15T15:41:04.476447297
+[1;92m[2023-06-15 15:41:04:478][0;36m [WARNING ][0m [    MainShutdownThread ][1;34m MonitorRuntime$MainShutdownThread.run(): [0mShutdownThread started... 2023-06-15T15:41:04.476447297
+
+Total number of threads: 28
+No locked threads.
+
+Save thread-dump to file: logs/thread-dump.log, size: 13846
+ShutdownThread finished...
+==========
+STARTED Tigase Fri Jun 16 12:12:20 UTC 2023 using:
+    ./scripts/tigase.sh start ../etc/tigase.conf 
+==========
+componentInfo{Title=Tigase XML Tools, Version=4.2.0-b312/d9c67f01, Class=tigase.xml.XMLUtils}
+componentInfo{Title=Tigase Utils, Version=4.3.0-b469/4d54586e, Class=tigase.util.ClassUtil}
+componentInfo{Title=Tigase XMPP Server, Version=8.3.0-b6255/da4091cf, Class=tigase.server.XMPPServer}
+componentInfo{Title=Tigase XMPP Server Distribution, Version=8.3.0-b12193/133d8cff, Class=tigase.dist.XmppServerDist}
+[1;92m[2023-06-16 12:12:21:090][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mNo property file not specified! Using default one etc/init.properties
+[1;92m[2023-06-16 12:12:21:135][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mProvided property file /home/tigase/tigase-server-8.3.0-b12193/etc/init.properties does NOT EXISTS! Trying to use default one etc/init.properties
+[1;92m[2023-06-16 12:12:21:143][0;36m [CONFIG  ][0m [                  main ][1;34m ConfigHolder.loadFromDSLFiles()  : [0mLoading configuration from file: etc/config.tdsl
+[1;92m[2023-06-16 12:12:24:828][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+[1;92m[2023-06-16 12:12:25:130][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+
+
+
+
+  =============================================================================
+  ERROR! Terminating the server process.
+  Problem initializing the server: 
+RootCause:
+   -> tigase.kernel.KernelException: Failed to initialize data sources!
+      [tigase.server.Bootstrap.start(Bootstrap.java:324)]
+  Please fix the problem and start the server again.
+  =============================================================================
+
+
+
+
+
+ShutdownThread started... 2023-06-16T12:12:25.187178660
+
+Total number of threads: 36
+No locked threads.
+
+Save thread-dump to file: logs/thread-dump.log, size: 22794
+ShutdownThread finished...
+==========
+STARTED Tigase Fri Jun 16 12:13:31 UTC 2023 using:
+    ./scripts/tigase.sh start ../etc/tigase.conf 
+==========
+componentInfo{Title=Tigase XML Tools, Version=4.2.0-b312/d9c67f01, Class=tigase.xml.XMLUtils}
+componentInfo{Title=Tigase Utils, Version=4.3.0-b469/4d54586e, Class=tigase.util.ClassUtil}
+componentInfo{Title=Tigase XMPP Server, Version=8.3.0-b6255/da4091cf, Class=tigase.server.XMPPServer}
+componentInfo{Title=Tigase XMPP Server Distribution, Version=8.3.0-b12193/133d8cff, Class=tigase.dist.XmppServerDist}
+[1;92m[2023-06-16 12:13:31:783][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mNo property file not specified! Using default one etc/init.properties
+[1;92m[2023-06-16 12:13:31:826][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mProvided property file /home/tigase/tigase-server-8.3.0-b12193/etc/init.properties does NOT EXISTS! Trying to use default one etc/init.properties
+[1;92m[2023-06-16 12:13:31:837][0;36m [CONFIG  ][0m [                  main ][1;34m ConfigHolder.loadFromDSLFiles()  : [0mLoading configuration from file: etc/config.tdsl
+[1;92m[2023-06-16 12:13:35:793][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+[1;92m[2023-06-16 12:13:36:122][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+
+
+
+
+  =============================================================================
+  ERROR! Terminating the server process.
+  Problem initializing the server: 
+RootCause:
+   -> tigase.kernel.KernelException: Failed to initialize data sources!
+      [tigase.server.Bootstrap.start(Bootstrap.java:324)]
+  Please fix the problem and start the server again.
+  =============================================================================
+
+
+
+
+
+ShutdownThread started... 2023-06-16T12:13:36.204162454
+
+Total number of threads: 28
+No locked threads.
+
+Save thread-dump to file: logs/thread-dump.log, size: 14366
+ShutdownThread finished...
+==========
+STARTED Tigase Fri Jun 16 12:21:11 UTC 2023 using:
+    ./scripts/tigase.sh start etc/tigase.conf 
+==========
+componentInfo{Title=Tigase XML Tools, Version=4.2.0-b312/d9c67f01, Class=tigase.xml.XMLUtils}
+componentInfo{Title=Tigase Utils, Version=4.3.0-b469/4d54586e, Class=tigase.util.ClassUtil}
+componentInfo{Title=Tigase XMPP Server, Version=8.3.0-b6255/da4091cf, Class=tigase.server.XMPPServer}
+componentInfo{Title=Tigase XMPP Server Distribution, Version=8.3.0-b12193/133d8cff, Class=tigase.dist.XmppServerDist}
+[1;92m[2023-06-16 12:21:12:197][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mNo property file not specified! Using default one etc/init.properties
+[1;92m[2023-06-16 12:21:12:240][0;36m [FINEST  ][0m [                  main ][1;34m OldConfigHolder.detectPathAndFormat(): [0mProvided property file /home/tigase/tigase-server-8.3.0-b12193/etc/init.properties does NOT EXISTS! Trying to use default one etc/init.properties
+[1;92m[2023-06-16 12:21:12:247][0;36m [CONFIG  ][0m [                  main ][1;34m ConfigHolder.loadFromDSLFiles()  : [0mLoading configuration from file: etc/config.tdsl
+[1;92m[2023-06-16 12:21:17:939][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+[1;92m[2023-06-16 12:21:18:434][0;36m [WARNING ][0m [                  main ][1;34m Kernel.injectDependencies()      : [0m
+
+
+=====================
+Could not initialize bean default (class: class tigase.db.beans.DataSourceBean$DataSourceMDConfigBean), skipping injection of this bean
+RootCause:
+   -> java.lang.reflect.InvocationTargetException
+      [java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)]
+      -> java.lang.RuntimeException: java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+         [java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)]
+         -> java.lang.RuntimeException: Could not initialize tigase.db.jdbc.DataRepositoryImpl for name 'default'
+            [tigase.db.beans.MDPoolConfigBean.lambda$setInstances$0(MDPoolConfigBean.java:180)]
+            -> tigase.db.DBInitException: Database initialization failed
+               [tigase.db.jdbc.DataRepositoryImpl.initialize(DataRepositoryImpl.java:318)]
+               -> java.sql.SQLException: Failed to create database 'tigasedb', see the next exception for details.
+                  [org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)]
+                  -> ERROR XJ041: Failed to create database 'tigasedb', see the next exception for details.
+                     [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+                     -> ERROR XBM0J: Directory /home/tigase/tigase-server-8.3.0-b12193/tigasedb already exists.
+                        [org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)]
+=====================
+
+
+
+
+
+
+
+  =============================================================================
+  ERROR! Terminating the server process.
+  Problem initializing the server: 
+RootCause:
+   -> tigase.kernel.KernelException: Failed to initialize data sources!
+      [tigase.server.Bootstrap.start(Bootstrap.java:324)]
+  Please fix the problem and start the server again.
+  =============================================================================
+
+
+
+
+
+ShutdownThread started... 2023-06-16T12:21:18.452133398
+
+Total number of threads: 27
+No locked threads.
+
+Save thread-dump to file: logs/thread-dump.log, size: 13846
+ShutdownThread finished...

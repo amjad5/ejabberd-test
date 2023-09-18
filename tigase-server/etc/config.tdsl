@@ -1,0 +1,20 @@
+admins = [
+    'admin@localhost'
+]
+'config-type' = 'default'
+debug = [ 'server' ]
+'default-virtual-host' = 'localhost'
+dataSource () {
+    default () {
+        uri = 'jdbc:derby:tigasedb;create=true'
+    }
+}
+http () {
+    setup () {
+        'admin-password' = 'tigase'
+        'admin-user' = 'admin'
+    }
+}
+pubsub () {
+    trusted = [ 'http@{clusterNode}' ]
+}
